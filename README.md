@@ -41,6 +41,62 @@ $store->update($file);
 $store->delete($file);
 ```
 
+## Configuration
+
+Depending on which store you wish to you use you will need to provide different configuration values.
+
+### `.env`
+
+```ini
+IPFS_GATEWAY=http://127.0.0.1:8080
+IPFS_API=http://127.0.0.1:5001/api/v0
+
+PINATA_KEY=
+PINATA_SECRET=
+
+INFURA_USERNAME=
+INFURA_PASSWORD=
+
+GITHUB_TOKEN=
+GITHUB_USER=
+GITHUB_REPO=
+```
+
+### `config/services.php`
+
+```php
+<?php
+
+declare(strict_types=1);
+
+return [
+
+    // Default contents here...
+
+    'github' => [
+        'token'      => env('GITHUB_TOKEN'),
+        'username'   => env('GITHUB_USER'),
+        'repository' => env('GITHUB_REPO'),
+    ],
+
+    'ipfs' => [
+        'gateway' => env('IPFS_GATEWAY'),
+        'api'     => env('IPFS_API'),
+    ],
+
+    'infura' => [
+        'username' => env('INFURA_USERNAME'),
+        'password' => env('INFURA_PASSWORD'),
+    ],
+
+    'pinata' => [
+        'key'    => env('PINATA_KEY'),
+        'secret' => env('PINATA_SECRET'),
+    ],
+
+];
+```
+
 ## Testing
 
 ```bash
