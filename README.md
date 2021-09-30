@@ -4,7 +4,8 @@
 
 # Remote Storage Adapters for @laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/faustbrian/laravel-remote-store.svg?style=flat-square)](https://packagist.org/packages/faustbrian/laravel-remote-store)
+[![PHP](https://badgen.net/packagist/php/faustbrian/laravel-remote-store)](https://packagist.org/packages/faustbrian/laravel-remote-store)
+[![Latest Version](https://badgen.net/packagist/v/faustbrian/laravel-remote-store)](https://packagist.org/packages/faustbrian/laravel-remote-store)
 
 ## Installation
 
